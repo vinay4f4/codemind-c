@@ -2,18 +2,16 @@
 int main()
 {
     int i,j,k,l;
-    scanf("%d",&k);
-    for(i=1;i<=k;i++)
+    scanf("%d",&i);
+    for(j=1;j<=i;j++)
     {
-        for(j=1;j<=k;j++)
+        for(k=1;k<=i;k++)
         {
-            if(i==j)
-            printf("0");
+            if(k==j||k==i+1-j)
+            printf("x");
             else
-printf("x");
-        }
-        printf("
+            printf("0");
+        }printf("
 ");
     }
-    
 }
